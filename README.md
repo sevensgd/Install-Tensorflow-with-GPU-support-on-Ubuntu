@@ -45,5 +45,7 @@ print(sess.run(a + b))
 
 
 
+ipython-notebook from navigator
+conda install -c conda-forge ipywidgets
 
-
+https://coderwall.com/p/ohk6cg/remote-access-to-ipython-notebooks-via-ssh
