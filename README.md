@@ -22,3 +22,28 @@ export CUDA_HOME=/usr/local/cuda
 
 Download Anaconda from https://www.continuum.io/downloads
 bash Anaconda2-4.0.0-Linux-x86_64.sh
+conda create -n tensorflow python=2.7
+
+To activate this environment, use:
+source activate tensorflow
+To deactivate this environment, use:
+$ source deactivate
+
+source activate tensorflow
+pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl
+
+TEST:
+
+import tensorflow as tf
+hello = tf.constant('Hello, TensorFlow!')
+sess = tf.Session()
+print(sess.run(hello))
+a = tf.constant(10)
+b = tf.constant(32)
+print(sess.run(a + b))
+
+
+
+
+
+
