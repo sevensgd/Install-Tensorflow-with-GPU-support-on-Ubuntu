@@ -50,3 +50,9 @@ conda install -c conda-forge ipywidgets
 
 https://coderwall.com/p/ohk6cg/remote-access-to-ipython-notebooks-via-ssh
 ssh -N -f -L localhost:8889:localhost:8888 remote_user@remote_host
+
+sudo apt-get install fail2ban
+
+sudo apt-get update
+sudo apt-get install openssh-server
+sudo ufw allow 22
